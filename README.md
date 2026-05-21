@@ -1,17 +1,30 @@
 # yellowPagesIQ
-Give Details about company of iraq from yellowpages.com.iq
 
+Scrape company details from the Iraqi business directory
+[yellowpages.com.iq](http://www.yellowpages.com.iq) into a CSV file.
 
-*Must be install:*
-1. `pip install lxml`
-2. `pip install bs4`
-3. `pip install requests`
+For each company the scraper collects the name, category, address fields and
+contact details.
 
-You can use
-* `pip install -r requirements.txt`
+## Requirements
 
+- Python 3
 
-> May the force be with you
-###### Good Luck!
-- [x] Must Be Added
+Install the dependencies:
 
+```sh
+pip install -r requirements.txt
+```
+
+## Usage
+
+```sh
+python main.py
+```
+
+Results are appended to `IraqCompanyInformation.csv`. If a run is interrupted,
+the last processed id is printed so it can be resumed.
+
+## License
+
+Released under the [GPL-3.0](LICENSE.md) license.
